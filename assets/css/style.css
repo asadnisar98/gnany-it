@@ -5895,6 +5895,7 @@
 	position:relative;
 	padding:45px 35px;
 	background-color:var(--color-five);
+	min-height: 485px;
 }
 
 .service-block-two .inner-box .icon{
