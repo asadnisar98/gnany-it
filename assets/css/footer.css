@@ -412,7 +412,7 @@
 	position: relative;
 }
 .main-footer .footer_links a:hover {
-	color: #FF4A17;
+	color: #0d9ad0;
 }
 
 .main-footer .footer_links a::before {
@@ -539,7 +539,7 @@
 }
 .footer_info li i {
 	margin-right: 5px;
-	color: #FF4A17;
+	color: #0d9ad0;
 }
 
 /* Style Two */

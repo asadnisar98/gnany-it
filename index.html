@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 
-<!-- Mirrored from html.themexriver.com/aginco/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 May 2022 17:03:07 GMT -->
+ 
 <head>
 <meta charset="utf-8">
 <title>GNANY Digital Agency</title>
@@ -24,8 +24,8 @@
 
 <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
 
-<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -33,6 +33,13 @@
 
 <!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
 <!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
+
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+	function onSubmit(token) {
+	  document.getElementById("form_input").submit();
+	}
+  </script>
 </head>
 
 <body class="hidden-bar-wrapper">
@@ -90,7 +97,7 @@
 						<div class="upper-column info-box">
 							<div class="icon-box fas fa-envelope-open-text"></div>
 							<ul>
-								<li><strong>Mail Address</strong> <a href="mailto:mailto:info@gnany.com">info@gnany.com</a></li>
+								<li class="transform_link_topbar"><strong><a class="text-dark " href="mailto:mailto:info@gnany.com">info@gnany.com</a></strong> </li>
 							</ul>
 						</div>
 						
@@ -98,7 +105,7 @@
 						<div class="upper-column info-box">
 							<div class="icon-box fas fa-tty"></div>
 							<ul>
-								<li><strong>Phone Number</strong> <a href="tel:+856 500 2343">+856 500 2343</a></li>
+								<li class="transform_link_topbar"><strong><a class="text-dark" href="tel:+856 500 2343">+856 500 2343</a></strong> </li>
 							</ul>
 						</div>
 						
@@ -309,7 +316,7 @@
 						data-textalign="['top','top','top','top']"
 						data-frames='[{"delay":600,"speed":1500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"power3.out"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
 						style="">
-							<div class="title">Your Trusted Agency</div>
+							<div class="title">Your Trusted Digital Partner</div>
 						</div>
 						
 						<div class="tp-caption" 
@@ -329,7 +336,7 @@
 						data-textalign="['top','top','top','top']"
 						data-frames='[{"delay":900,"speed":1500,"frame":"0","from":"y:bottom;rX:-20deg;rY:-20deg;rZ:0deg;","to":"o:1;","ease":"power3.out"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
 						style="">
-							<h1>Welcome to GNANY</h1>
+							<h1>Welcome to GNANY <span class="trademarked_hn">&#8482;</span></h1>
 						</div>
 						
 						<div class="tp-caption tp-resizeme"
@@ -500,7 +507,7 @@
 				<!-- Images Column -->
 				<div class="images-column col-lg-6 col-md-12 col-sm-12">
 					<div class="vector-layer-one" style="background-image: url(assets/images/icons/vector-1.png)"></div>
-					<div class="vector-layer-two" style="background-image: url(assets/images/icons/vector-2.png)"></div>
+					<div class="vector-layer-two" style=""></div>
 					<div class="inner-column clearfix">
 						<div class="image wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
 							<img src="assets/images/resource/about-1.jpg" alt="" />
@@ -522,8 +529,8 @@
 					<div class="inner-column">
 						<!-- Sec Title -->
 						<div class="sec-title">
-							<div class="title">About Our Agency</div>
-							<h2>Your Trusted <span>partners</span> For Business</h2>
+							<div class="title">About GNANY</div>
+							<h2>Your Trusted <span>Digital</span> Partner</h2>
 							<div class="text">GNANY is a Software Development, Engineering Solutions and Information Technology Services Company. Our mission is to make the Information Technology affordable to all companies irrespective of their size. We provide consulting and IT services to clients globally. We deliver technology-driven business solutions that meet the strategic objectives of our clients. We develop, implement, maintain and support the IT applications by providing smart and intelligent solutions, high quality and low-cost service.</div>
 						</div>
 
@@ -697,7 +704,7 @@
 						
 						<!-- Default Form -->
 						<div class="default-form">
-							<form method="post" action="#">
+							<form id="form_input" method="post" action="#">
 								<div class="row clearfix">
 								
 									<!-- Form Group -->
@@ -734,7 +741,10 @@
 									</div>
 									
 									<div class="form-group col-lg-12 col-md-12 col-sm-12">
-										<button type="submit" class="theme-btn btn-style-three"><span class="txt">Send Messege <i class="flaticon-next-2"></i></span></button>
+										<button  class="theme-btn btn-style-three g-recaptcha" 
+										data-sitekey="reCAPTCHA_site_key" 
+										data-callback='onSubmit' 
+										data-action='submit' type="submit"><span class="txt">Send Messege <i class="flaticon-next-2"></i></span></button>
 									</div>
 									
 								</div>
@@ -807,7 +817,7 @@
 								<div class="content">
 									<span class="icon flaticon-group"></span>
 									<div class="count-outer count-box">
-										<span class="count-text" data-speed="4000" data-stop="160">0</span>+
+										<span class="count-text" data-speed="1500" data-stop="10">0</span>+
 									</div>
 									<h5>Worlds Clients</h5>
 								</div>
@@ -820,7 +830,7 @@
 								<div class="content">
 									<span class="icon flaticon-notepad"></span>
 									<div class="count-outer count-box">
-										<span class="count-text" data-speed="5500" data-stop="240">0</span>+
+										<span class="count-text" data-speed="1500" data-stop="5">0</span>+
 									</div>
 									<h5>Project Done</h5>
 								</div>
@@ -833,7 +843,7 @@
 								<div class="content">
 									<span class="icon flaticon-user-1"></span>
 									<div class="count-outer count-box">
-										<span class="count-text" data-speed="3500" data-stop="60">0</span>
+										<span class="count-text" data-speed="1500" data-stop="2">0</span>
 									</div>
 									<h5>Team Member</h5>
 								</div>
@@ -913,8 +923,6 @@
                         	<!-- Footer Column -->
                             <div class="footer-column col-lg-7 col-md-6 col-sm-12">
                                 <div class="footer-widget about-widget">
-									<div class="logo"><a href="index.html"><img src="assets/images/footer-logo.png" alt="" title=""></a></div>
-									<div class="text">A software and IT company</div>
 									<!-- Subscribe Form -->
 
 									<ul class="footer_info">
@@ -1032,6 +1040,4 @@
 <script src="assets/js/script.js"></script>
 
 </body>
-
-<!-- Mirrored from html.themexriver.com/aginco/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 02 May 2022 17:03:54 GMT -->
 </html>

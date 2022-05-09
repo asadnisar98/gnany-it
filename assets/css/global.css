@@ -70,13 +70,13 @@
 
 :root {
 	
-	/* ##FF4A17 in decimal RGB */
+	/* ##0d9ad0 in decimal RGB */
   --main-color: #0d9ad0;
   
-  /* #FF4A17 in decimal RGBA */
+  /* #0d9ad0 in decimal RGBA */
   --main-color-rgba: rgb(255,74,23,0.10);
   
-  /* #FF4A17 in decimal RGBA */
+  /* #0d9ad0 in decimal RGBA */
   --main-color-rgba-two: rgb(255,74,23,0.05);
   
   /* #efeef5 in decimal RGB */
@@ -640,7 +640,7 @@ img{
 
 .scroll-to-top{
 	position:fixed;
-	bottom:15px;
+	bottom:100px;
 	right:15px;
 	width:40px;
 	height:40px;
@@ -1252,14 +1252,7 @@ img{
 }
 
 .sec-title .title:after{
-	position:absolute;
-	content:'';
-	left:-20px;
-	top:-25px;
-	right:0px;
-	width:238px;
-	height:60px;
-	background:url(../images/icons/vector-19.png) no-repeat;
+ 
 }
 
 .sec-title .text{
